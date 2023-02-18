@@ -1,7 +1,12 @@
 import DefaultTheme from "vitepress/theme";
 import "./custom.css";
+import LinkCard from "./LinkCard.vue";
+
 export default {
   ...DefaultTheme,
+  enhanceApp({ app }) {
+    app.component("LinkCard", LinkCard);
+  },
 };
 
 /* 

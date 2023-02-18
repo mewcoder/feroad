@@ -21,5 +21,8 @@
   "homepage": "https://github.com/mewcoder/feroad#readme",
   "devDependencies": {
     "vitepress": "1.0.0-alpha.46"
+  },
+  "dependencies": {
+    "cardlink": "^1.0.2"
   }
 }
