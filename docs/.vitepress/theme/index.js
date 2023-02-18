@@ -11,5 +11,5 @@ export default {
 
 /* 
   颜色： https://ant.design/docs/spec/colors-cn
-  插画：https://undraw.co/search
+  插画：https://undraw.co/
 */

@@ -2,10 +2,14 @@
 
 ## 必看文章
 
-<LinkCard href="https://zhuanlan.zhihu.com/p/143611353" />
-<LinkCard href="https://juejin.cn/post/6921890174842454023" />
-
+<LinkCard :links="[
+  'https://zhuanlan.zhihu.com/p/143611353',
+  'https://juejin.cn/post/6921890174842454023'
+  ]" />
 
 ## 简历模板
-<LinkCard href="https://www.mujicv.com/" />
-<LinkCard href="https://easycv.cn/" />
+
+<LinkCard :links="[
+  'https://www.mujicv.com/',
+  'https://easycv.cn']
+  " />

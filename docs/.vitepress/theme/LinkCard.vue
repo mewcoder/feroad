@@ -1,17 +1,25 @@
 <template>
-  <a ref="link" target="blank" />
+  <div>
+    <a v-for="link in links" :href="link" ref="linkRef" target="blank" />
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
+defineProps({
+  links: {
+    type: Array,
+    default: () => [],
+  },
+});
 
-const link = ref(null);
+const linkRef = ref();
 
 onMounted(() => {
-  import("cardlink").then((module) => {
-    const cardlink = module.default
+  import("./link").then((module) => {
+    const cardlink = module.default;
     cardlink.server = "https://api.allorigins.win/raw?url=";
-    cardlink([link.value]);
+    cardlink(linkRef.value);
   });
 });
 </script>
