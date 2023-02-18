@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   lang: "zh-CN",
   title: "FERoad",
-  description: "前端学习，前端进阶，前端面试",
+  description: "WEB前端进阶知识库,前端学习,前端进阶,前端面试",
   head: [["link", { rel: "icon", href: "favicon.ico" }]],
   appearance: true,
   // base: '/feroad/',
