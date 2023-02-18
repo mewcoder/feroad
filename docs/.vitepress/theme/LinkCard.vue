@@ -4,14 +4,15 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import cardlink from "cardlink";
 
 const link = ref(null);
 
 onMounted(() => {
-  debugger
-  cardlink.server = "https://api.allorigins.win/raw?url=";
-  cardlink([link.value]);
+  import("cardlink").then((module) => {
+    const cardlink = module.default
+    cardlink.server = "https://api.allorigins.win/raw?url=";
+    cardlink([link.value]);
+  });
 });
 </script>
 <style>
