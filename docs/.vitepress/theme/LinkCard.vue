@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <a v-for="link in links" :href="link" ref="linkRef" target="blank" />
+  <div v-for="link in links">
+    <a :href="link" ref="linkRef" target="blank">{{ link }}</a>
   </div>
 </template>
 
