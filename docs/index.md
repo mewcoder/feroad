@@ -39,4 +39,6 @@ features:
     details:
 ---
 
-<img src='/roadmap.jpg' width="900" style="margin:100px auto 0;border-radius:12px">
+<div style="background:#fff;border-radius:12px;width:950px;margin:100px auto 0;padding:20px">
+  <img src='/roadmap.svg' width="900" style="" >
+</div>
