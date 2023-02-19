@@ -39,6 +39,6 @@ features:
     details:
 ---
 
-<div style="background:#fff;border-radius:12px;width:950px;margin:100px auto 0;padding:20px">
-  <img src='/roadmap.svg' width="900" style="" >
+<div style="background:#fff;border-radius:12px;max-width:1000px;margin:100px auto 0;padding:20px">
+  <img src='/roadmap.svg' style="width:100%" >
 </div>
