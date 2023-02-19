@@ -1187,9 +1187,9 @@
     <g class="clickable-group " data-group-id="114-css-frameworks">
         <rect x="298.35" y="1745.35" width="209.3" height="47.3" rx="2" fill="rgb(255,187,150)" fill-opacity="1"
               stroke="rgb(0,0,0)" stroke-width="2.7"></rect>
-        <text x="337" y="1775.6625003814697" fill="rgb(0,0,0)"
+        <text x="350" y="1775.6625003814697" fill="rgb(0,0,0)"
               font-style="normal" font-weight="normal" font-size="17px">
-            <tspan>CSS的最早框架</tspan>
+            <tspan>CSS框架</tspan>
         </text>
     </g>
     <g class="clickable-group " data-group-id="114-css-frameworks:css-first">
@@ -1197,7 +1197,7 @@
               stroke="rgb(0,0,0)" stroke-width="2.7"></rect>
         <text x="340" y="2126" fill="rgb(0,0,0)"
               font-style="normal" font-weight="normal" font-size="16px">
-            <tspan>CSS 早期框架 </tspan>
+            <tspan>CSS早期框架 </tspan>
         </text>
         <text x="329" y="2144" fill="rgb(0,0,0)" font-style="normal" font-weight="normal"
               font-size="16px">
