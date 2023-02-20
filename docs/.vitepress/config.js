@@ -16,6 +16,7 @@ export default defineConfig({
     },
     nav: [
       { text: "前端进阶", link: "/advanced/infra" },
+      { text: "技术视野", link: "grow/2023" },
       { text: "面试指南", link: "/interview/resume" },
       { text: "学习资源", link: "/study/book" },
       { text: "工具集合", link: "/tools/website" },
@@ -32,7 +33,7 @@ export default defineConfig({
     sidebar: {
       "/interview/": [
         {
-          title: "面试专题",
+          text: "",
           collapsible: true,
           items: [
             { text: "写好简历", link: "/interview/resume" },
@@ -42,14 +43,14 @@ export default defineConfig({
       ],
       "/tools/": [
         {
-          title: "工具集合",
+          text: "",
           collapsible: true,
           items: [{ text: "在线网站", link: "/tools/website" }],
         },
       ],
       "/study/": [
         {
-          title: "学习资源",
+          text: "",
           collapsible: true,
           items: [
             { text: "好书推荐", link: "/study/book" },
@@ -58,11 +59,25 @@ export default defineConfig({
           ],
         },
       ],
+      "/grow/": [
+        {
+          text: "行业发展",
+          collapsible: true,
+          items: [
+            { text: "2023", link: "/grow/2023" },
+          ],
+        },
+      ],
       "/advanced/": [
         {
-          title: "技术进阶",
+          text: "技术进阶",
           collapsible: true,
-          items: [{ text: "前端基建", link: "/grow/index" }],
+          items: [{ text: "前端基建", link: "/advanced/infra" }],
+        },
+        {
+          text: "新技术",
+          collapsible: true,
+          items: [{ text: "WebContainer", link: "/advanced/web-container" }],
         },
       ],
     },
