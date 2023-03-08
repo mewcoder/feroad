@@ -12,7 +12,7 @@ undefined / string / number / boolean / symbol / bigint / **function** / **objec
 
 - 特点：可以识别 function，null 会被识别为 object [历史遗留问题](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null)
 
-**方法 2：instanceof  **
+**方法 2：instanceof**
 
 - 特点：判断对象是否为构造函数的实例，原理是判断对象的原型链上是否存在构造函数的原型对象
 

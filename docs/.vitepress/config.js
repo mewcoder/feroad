@@ -50,6 +50,7 @@ export default defineConfig({
             { text: "JavaScript 高级", link: "/interview/js2" },
             { text: "浏览器", link: "/interview/browser" },
             { text: "网络", link: "/interview/network" },
+            { text: "打印题", link: "/interview/console" }
           ],
         },
         {
