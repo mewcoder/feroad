@@ -33,11 +33,23 @@ export default defineConfig({
     sidebar: {
       "/interview/": [
         {
-          text: "",
+          text: "指南",
           collapsible: true,
           items: [
             { text: "写好简历", link: "/interview/resume" },
             { text: "面试题库", link: "/interview/question" },
+          ],
+        },
+        {
+          text: "百题斩",
+          collapsible: true,
+          items: [
+            { text: "HTML", link: "/interview/html" },
+            { text: "CSS", link: "/interview/css" },
+            { text: "JavaScript基础", link: "/interview/js1" },
+            { text: "JavaScript核心", link: "/interview/js2" },
+            { text: "浏览器", link: "/interview/browser" },
+            { text: "网络", link: "/interview/network" },
           ],
         },
       ],
@@ -63,9 +75,7 @@ export default defineConfig({
         {
           text: "行业发展",
           collapsible: true,
-          items: [
-            { text: "2023", link: "/grow/2023" },
-          ],
+          items: [{ text: "2023", link: "/grow/2023" }],
         },
       ],
       "/advanced/": [

@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/mewcoder/feroad#readme",
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.46"
+    "vitepress": "^1.0.0-alpha.50"
   }
 }
