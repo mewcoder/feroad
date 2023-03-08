@@ -1,5 +1,3 @@
 # 前端基建
 
-<LinkCard :links="[
-  'https://juejin.cn/post/6844904087662624781'
-  ]" />
+- [堂主 - 如何推动前端团队的基础设施建设](https://juejin.cn/post/6844904087662624781)

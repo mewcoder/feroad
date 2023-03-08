@@ -1,5 +1,3 @@
 # 设计网站
 
-<LinkCard :links="[
-  'https://undraw.co/illustrations/'
-  ]" />
+- [插画-undraw](https://undraw.co/illustrations/)

@@ -15,9 +15,9 @@ export default defineConfig({
       copyright: "Copyright © 2023 mewcoder",
     },
     nav: [
+      { text: "面试指南", link: "/interview/resume" },
       { text: "前端进阶", link: "/advanced/infra" },
       { text: "技术视野", link: "grow/2023" },
-      { text: "面试指南", link: "/interview/resume" },
       { text: "学习资源", link: "/study/book" },
       { text: "工具集合", link: "/tools/website" },
     ],
@@ -33,7 +33,7 @@ export default defineConfig({
     sidebar: {
       "/interview/": [
         {
-          text: "指南",
+          text: "面试指南",
           collapsible: true,
           items: [
             { text: "写好简历", link: "/interview/resume" },
@@ -41,15 +41,23 @@ export default defineConfig({
           ],
         },
         {
-          text: "百题斩",
+          text: "前端百题斩",
           collapsible: true,
           items: [
             { text: "HTML", link: "/interview/html" },
             { text: "CSS", link: "/interview/css" },
-            { text: "JavaScript基础", link: "/interview/js1" },
-            { text: "JavaScript核心", link: "/interview/js2" },
+            { text: "JavaScript 基础", link: "/interview/js1" },
+            { text: "JavaScript 高级", link: "/interview/js2" },
             { text: "浏览器", link: "/interview/browser" },
             { text: "网络", link: "/interview/network" },
+          ],
+        },
+        {
+          text: "手写题",
+          collapsible: true,
+          items: [
+            { text: "JS 实现", link: "/interview/handwriting/js" },
+            { text: "基础应用", link: "/interview/handwriting/base" },
           ],
         },
       ],
