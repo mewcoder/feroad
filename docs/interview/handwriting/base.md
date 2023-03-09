@@ -1,3 +1,5 @@
+# 基础应用篇
+
 ## 1. 防抖/节流
 
 ```javascript
@@ -89,4 +91,37 @@ class EventEmitter {
     this.on(eventName, wrapper);
   }
 }
+```
+
+## JSONP
+
+```js
+function jsonp({ url, params, cb }) {
+  return new Promise((resolve, reject) => {
+    // 处理传参成x=a&y=b的形式
+    params = { ...params, cb };
+    let arrs = [];
+    for (let key in params) {
+      arrs.push(`${key}=${params[key]}`);
+    }
+
+    let script = document.createElement("script"); // 标签
+    window[cb] = function (data) {
+      resolve(data);
+      document.body.removeChild(script);
+    };
+    script.src = `${url}?${arrs.join("&")}`;
+    document.body.appendChild(script);
+  });
+}
+
+// 只能发送get请求 不支持post put delete
+// 不安全 xss攻击  不采用
+jsonp({
+  url: "http://localhost:3000/say",
+  params: { num: 1 },
+  cb: "show",
+}).then((data) => {
+  console.log(data);
+});
 ```

@@ -57,8 +57,10 @@ export default defineConfig({
           text: "手写题",
           collapsible: true,
           items: [
-            { text: "JS 实现", link: "/interview/handwriting/js" },
-            { text: "基础应用", link: "/interview/handwriting/base" },
+            { text: "大纲", link: "/interview/handwriting/outline" },
+            { text: "JS实现篇", link: "/interview/handwriting/js" },
+            { text: "基础应用篇", link: "/interview/handwriting/base" },
+            { text: "综合应用篇", link: "/interview/handwriting/enhance" }
           ],
         },
       ],
