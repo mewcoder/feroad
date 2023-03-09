@@ -38,6 +38,7 @@ export default defineConfig({
           items: [
             { text: "写好简历", link: "/interview/resume" },
             { text: "面试题库", link: "/interview/question" },
+            { text: "答题套路", link: "/interview/answer" },
           ],
         },
         {
@@ -50,7 +51,7 @@ export default defineConfig({
             { text: "JavaScript 高级", link: "/interview/js2" },
             { text: "浏览器", link: "/interview/browser" },
             { text: "网络", link: "/interview/network" },
-            { text: "打印题", link: "/interview/console" }
+            { text: "打印题", link: "/interview/console" },
           ],
         },
         {
@@ -60,7 +61,7 @@ export default defineConfig({
             { text: "大纲", link: "/interview/handwriting/outline" },
             { text: "JS实现篇", link: "/interview/handwriting/js" },
             { text: "基础应用篇", link: "/interview/handwriting/base" },
-            { text: "综合应用篇", link: "/interview/handwriting/enhance" }
+            { text: "综合应用篇", link: "/interview/handwriting/enhance" },
           ],
         },
       ],
