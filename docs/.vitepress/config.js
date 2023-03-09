@@ -38,7 +38,7 @@ export default defineConfig({
           items: [
             { text: "写好简历", link: "/interview/resume" },
             { text: "面试题库", link: "/interview/question" },
-            { text: "答题套路", link: "/interview/answer" },
+            { text: "答题套路", link: "/interview/anwser" },
           ],
         },
         {
