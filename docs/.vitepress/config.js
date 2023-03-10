@@ -52,6 +52,11 @@ export default defineConfig({
             { text: "浏览器", link: "/interview/browser" },
             { text: "网络", link: "/interview/network" },
             { text: "打印题", link: "/interview/console" },
+            { text: "Vue", link: "/interview/vue" },
+            { text: "Webpack", link: "/interview/webpack" },
+            { text: "前端工程化", link: "/interview/engineering" },
+            { text: "性能优化", link: "/interview/performance" },
+            { text: "项目", link: "/interview/project" },
           ],
         },
         {

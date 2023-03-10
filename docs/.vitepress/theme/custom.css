@@ -30,3 +30,18 @@
   justify-content: left;
   margin-bottom: 0;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 8px;
+}
