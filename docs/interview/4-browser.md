@@ -15,8 +15,6 @@
 - 网络进程
 - 插件进程
 
-
-
 ## 2.事件循环机制
 
 JS 是单线程的语言，只有一个执行栈，先执行当前任务，遇到异步事件就放入任务队列中，分为宏任务和微任务，当前宏任务执行完会处理所有的微任务，再从宏任务队列中取一个开始下一个宏任务。
@@ -37,8 +35,6 @@ Node:
 
 - `Node11`开始，每执行完一个 `timers` 类回调，例如 `setTimeout` /`setImmediate` 之后，都会把微任务给执行掉（promise 等）
 
-
-
 ## 3.浏览器存储
 
 **Cookie**：4K，用于 HTTP 请求头，同源，每个域名 Cookie 数量不超过 20 个
@@ -50,6 +46,10 @@ Node:
 - `SameSite` 限制 Cookie 在跨站请求时不会被发送，同站：**二级域名**
 - 主要用于，会话状态管理，行为跟踪。
 - 缺点：空间小，网络请求会携带
+
+> https://juejin.cn/post/6963632513914765320
+
+> https://juejin.cn/post/7171349320904474632
 
 > 操作：document.cookie 读取/或写入，写入是追加
 
@@ -63,8 +63,6 @@ Node:
 > 方法：setItem/getItem/removeItem/clear
 
 **IndexedDB**：用于客户端存储大量结构化数据，采用键值存储，接近 NoSQL 数据库，同源策略，支持异步，支持事务，空间大（不少于 250M）
-
-
 
 ## 4.怎么解决跨域问题
 
@@ -121,8 +119,6 @@ Access-Control-Request-Methods: POST,GET,OPTIONS
 - 正向代理
 - 反向代理
 
-
-
 ## 5.浏览器缓存
 
 浏览器缓存查找优先级：Service Worker / Memory Cache（浏览器自己控制） / Disk Cache（**HTTP 缓存**） / Push Cache（HTTP2）
@@ -146,11 +142,9 @@ ctrl+F5: `Cache-Control:no-cache;Pragma:no-cache`
 
 `max-age=0`会走协商缓存，`no-cache` 重新请求
 
-
-
 ## 6.浏览器渲染过程
 
-关键渲染路径（CRP）：创建DOM树/创建CSSOM树 - 生成渲染树 - 布局 - 绘制
+关键渲染路径（CRP）：创建 DOM 树/创建 CSSOM 树 - 生成渲染树 - 布局 - 绘制
 
 ![img](./img/timg.76170e50.jpg)
 
@@ -161,20 +155,13 @@ ctrl+F5: `Cache-Control:no-cache;Pragma:no-cache`
 - `绘制`：为每个图层生成绘制列表，绘制节点的外观（颜色等）等
 - `合成`：将图层划分图块，光栅化（转位图），发送绘制命令浏览进程，渲染显示
 
-
-
 > 结合性能优化回答
 
-
-
-> CSS会阻塞渲染吗
+> CSS 会阻塞渲染吗
 >
 > - CSS 不会阻塞 DOM 解析（link 在 head 中）
 > - CSS 会阻塞 DOM 树的渲染（阻塞 render tree 的形成）
 > - 会阻塞后面的 JS 的执行（JS 可以更改 DOM 样式）
->
-
-
 
 ## 7.rAF/rIC
 
