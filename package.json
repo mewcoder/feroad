@@ -1,0 +1,25 @@
+{
+  "name": "feroad",
+  "version": "1.0.0",
+  "description": "前端精进之路",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mewcoder/feroad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mewcoder/feroad/issues"
+  },
+  "homepage": "https://github.com/mewcoder/feroad#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.50"
+  }
+}
