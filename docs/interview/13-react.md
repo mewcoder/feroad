@@ -6,6 +6,7 @@
 - 16.8：hooks
 - 17：过渡版本
 - 18：concurrent mode
+- 19：编译(自动 memo 化)， RSC的更新
 
 ## setState 是同步还是异步
 

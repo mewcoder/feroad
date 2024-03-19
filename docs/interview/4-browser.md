@@ -37,19 +37,25 @@ Node:
 
 ## 3.浏览器存储
 
-**Cookie**：4K，用于 HTTP 请求头，同源，每个域名 Cookie 数量不超过 20 个
+**Cookie**：
 
-- 可设置有效期（`Expires`/`Max-Age`）
+主要用于，会话状态管理，用户跟踪。
+缺点：空间小 4K 限制；网络请求会携带影响性能；安全和隐私问题，如 CSRF
+
 - `Domain`/`Path` 定义了 Cookie 的作用域
+- 可设置有效期（`Expires`/`Max-Age`）
+- `HttpOnly` 限制 JS 访问（`document.cookie`），减少 XSS 风险
 - `Secure` 标记为只能通过 HTTPS 发送
-- `HttpOnly` 无法通过 JS 访问（ Document.cookie）
-- `SameSite` 限制 Cookie 在跨站请求时不会被发送，同站：**二级域名**
-- 主要用于，会话状态管理，行为跟踪。
-- 缺点：空间小，网络请求会携带
 
-> https://juejin.cn/post/6963632513914765320
+第三方 Cookie 的问题：
 
-> https://juejin.cn/post/7171349320904474632
+- `SameSite` 限制三方 Cookie 在跨站（顶级域名不同）请求时不会被发送，http 不支持，需要同时设置`Secure`
+  - `Strict` 不允许跨站
+  - `Lax` 允许部分请求,如 `a`、`link`
+  - `None` 不限制
+  - Chrome 80+ 默认是 `Lax`
+- Chrome 新版本浏览器停用第三方 Cookie
+- Chrome 114 增加了 Cookie 独立分区 新属性，`Partitioned`, 第三方 cookie 可以用。 跨站不共享
 
 > 操作：document.cookie 读取/或写入，写入是追加
 
